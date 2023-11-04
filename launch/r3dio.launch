@@ -3,6 +3,7 @@
     <param name="Depth_point_topic" type="string" value= "/camera/depth/color/points"/>
     <param name="IMU_topic" type="string" value= "/camera/imu" />
     <param name="Image_topic" type="string" value= "/camera/color/image_raw" />
+    <param name="Depth_Image_topic" type="string" value= "/camera/depth/color/points"/>
  
 
     <node pkg="r3dio" type="r3dio_node" name="r3dio_node"  output="screen" required="true"/>
