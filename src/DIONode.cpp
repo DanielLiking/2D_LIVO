@@ -21,9 +21,6 @@
 #include <pcl/point_cloud.h>
 #include <pcl/point_types.h>
 
-#include "utils.h"
-#include "param.h"
-#include "RGBDProcessingClass.h"
 
 #include "tools_logger.hpp"
 #include "tools_color_printf.hpp"
@@ -34,19 +31,21 @@
 
 #include "r3dio.h"
 
-MeasureGroup Measures;
-StatesGroup dio_state;
 
 
 
-int main(int argc, char const *argv[])
+
+
+
+
+int main(int argc, char **argv)
 {
     printf_program("R3DIO START!!!");
     Common_tools::printf_software_version();
     Eigen::initParallel();
-    ros::init(argc, argv, "R3DIO");
+    ros::init(argc, argv, "R3LIVE_main");
     R3DIO * Dio = new R3DIO();
     ros::Rate rate(5000);
     bool status = ros::ok();
-    ros::spin;
+    ros::spin();
 }

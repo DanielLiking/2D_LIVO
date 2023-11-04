@@ -1,17 +1,11 @@
 <?xml version="1.0"?>
 <package>
-  <name>r2dio</name>
-  <version>0.0.0</version>
+  <name>r3dio</name>
+  <version>1.0.0</version>
+  <description>R3LIVE: A Robust, Real-time, RGB-colored, LiDAR-Inertial-Visual tightly-coupled state Estimation and mapping package</description>
+  <maintainer email="ziv.lin.ljr@gmail.com">Jiarong.Lin</maintainer>
+  <license>GPLv2</license>
 
-  <description>
-    This work is created based on SSL_SLAM
-  </description>
-
-  <maintainer email="jeff_xu@qq.com">Jie Xu</maintainer>
-
-  <license>BSD</license>
-  <author email="jeff_xu@qq.com">Jie Xu</author>
-  
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>geometry_msgs</build_depend>
   <build_depend>nav_msgs</build_depend>
@@ -42,6 +36,5 @@
   <run_depend>cv_bridge</run_depend>
   <run_depend>image_transport</run_depend>
 
-  <export>
-  </export>
+
 </package>

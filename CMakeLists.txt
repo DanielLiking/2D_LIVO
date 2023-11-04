@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(r2dio)
+project(r3dio)
 #add_definitions(-w)
 
 set(CMAKE_BUILD_TYPE "Release")
@@ -30,6 +30,7 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}   ${OpenMP_C_FLAGS}")
 
 include_directories(
   include
+  ./src/tools/
   ${catkin_INCLUDE_DIRS}
   ${PCL_INCLUDE_DIRS}
   ${EIGEN3_INCLUDE_DIRS}
@@ -48,7 +49,7 @@ catkin_package(
   INCLUDE_DIRS include
 )
 
-add_executable(r2dio_laser_processing_node  src/nodemain.cpp src/RGBDProcessingClass.cpp src/param.cpp src/utils.cpp )
-target_link_libraries(r2dio_laser_processing_node ${EIGEN3_LIBRARIES} ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${OpenCV_LIBS})
+add_executable(r3dio_node  src/DIONode.cpp src/r3dio.cpp  )
+target_link_libraries(r3dio_node ${EIGEN3_LIBRARIES} ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${OpenCV_LIBS})
 
 

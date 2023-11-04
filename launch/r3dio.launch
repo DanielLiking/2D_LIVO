@@ -1,0 +1,12 @@
+<launch>
+    <!-- Subscribed topics -->
+    <param name="Depth_point_topic" type="string" value= "/camera/depth/color/points"/>
+    <param name="IMU_topic" type="string" value= "/camera/imu" />
+    <param name="Image_topic" type="string" value= "/camera/color/image_raw" />
+ 
+
+    <node pkg="r3dio" type="r3dio_node" name="r3dio_node"  output="screen" required="true"/>
+    
+    <arg name="rviz" default="1" />
+    
+</launch>
