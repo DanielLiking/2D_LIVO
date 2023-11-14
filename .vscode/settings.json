@@ -63,6 +63,8 @@
         "typeinfo": "cpp",
         "csignal": "cpp",
         "random": "cpp",
-        "future": "cpp"
+        "future": "cpp",
+        "codecvt": "cpp",
+        "*.ipp": "cpp"
     }
 }
