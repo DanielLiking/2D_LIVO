@@ -62,7 +62,7 @@
 
 using namespace std;
 
-typedef pcl::PointXYZI PointType;
+// typedef pcl::PointXYZI PointType;
 typedef pcl::PointXYZ PointT;
     // 使用PCL中点云的数据结构 pcl::PointCloud<pcl::PointXYZ>
 typedef pcl::PointCloud<PointT> PointCloudT;
